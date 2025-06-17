@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Curso</title>
+    <link rel="stylesheet" href="cursos.css">
+</head>
+<body>
+    <div class="painel">
+        
+        <nav class="menu-lateral">
+            <button><b> Cadastrar Novos Usuário</b></button>
+            <button><b> Cadastrar Novas Turmas</b></button>
+            <button> <b>Cadastrar Novas Disciplinas</b></button>
+            <button> <b>Avisos Professores</b></button>
+            <button> <b>Avisos Alunos</b></button>
+            <button> <b> Matricular Aluno</b></button>
+            <button> <b> Enalamento de Aluno/ Turmas</b></button>
+            <button> <b>Gestão de Professores</b></button>
+            <button> <b>Fechamento de Médias</b></button>
+            <button> <b>Gerenciamento de Frequência</b></button>
+            <button> <b>PPC/Cursos</b></button>
+        </nav>
+        <img src="logo_sanquim.webp" alt="Logo Colégio" class="logo-inferior">
+    </div>
+
+    <div class="conteudo">
+        <div class="topo">
+            <button class="acao"><b>Alterar senha professores</b></button>
+            <button class="acao"><b>Alterar senha alunos</b></button>
+            <button class="acao"><b>Alterar senha</b></button>
+            <button class="sair"><b>Sair</b></button>
+        </div>
+
+        <h2>CADASTRO DE CURSO</h2>
+        <form action="#" method="POST" class="formulario">
+            <label for="tipo_usuario">Nome de Curso</label>
+            <input type="text" required placeholder="Digite o nome do curso">
+            <br>
+            <label>Modalidade</label>
+            <select class="modalidade">
+                <option>Presencial</option>
+                <option>Híbrido</option>
+                <option>EAD</option>
+            </select>
+            <br>
+            <label>Área de Conhecimento</label>
+            <select class="area_conhecimento">
+                <option>Exatas</option>
+                <option>Humanas</option>
+                <option>Saúde</option>
+            </select>
+            <br>
+            <label>Carga Horária</label>
+            <input type="text" required placeholder="Digite a carga horária em horas">
+            <button type="submit" class="botao"> Cadastrar Curso</button>
+
+        </form>
+        <div class="acoes-inferiores">
+            <button class="acao"><b>Alterar Curso</b></button>
+            <button class="acao"><b>Ativar/Inativar Curso</b></button>
+            <button class="acao"><b>Consultar Curso</b></button>
+           
+        </div>
+    </div>
+    <script>
+        const tipoUsuario = document.getElementById("tipo_usuario");
+        const campoProfessor = document.getElementById("campo_professor");
+        const campoAluno = document.getElementById("campo_aluno");
+
+        tipoUsuario.addEventListener("change", function () {
+            campoProfessor.style.display = this.value === "professor" ? "block" : "none";
+            campoAluno.style.display = this.value === "aluno" ? "block" : "none";
+        });
+    </script>
+</body>
+</html>

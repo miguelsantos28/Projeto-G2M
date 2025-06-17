@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Principal Aluno</title>
+    <link rel="stylesheet" href="tela_principal_aluno.css">
+</head>
+<body>
+    <div class="painel">
+        
+        <nav class="menu-lateral">
+            <button><b> Meu Curso</b></button>
+            <button><b> Minha Turma</b></button>
+            <button> <b>Avisos</b></button>
+            <button> <b>Meus Professores</b></button>
+            <button> <b>Histórico</b></button>
+            <button> <b> Secretaria Acadêmica</b></button>
+            <button> <b> Materiais Didáticos</b></button>
+            <button> <b> Disciplinas/Faltas</b></button>
+            <button> <b> Mural de Notas</b></button>
+        </nav>
+        <img src="logo_sanquim.webp" alt="Logo Colégio" class="logo-inferior">
+    </div>
+
+    <div class="conteudo">
+          <main class="conteudo_principal">
+        <img src="foto_perfil.png" height="200px" width="350px">
+        <button class="foto" type="button">Alterar Foto</button>
+        <h2>Seja Bem-Vindo {Nome do Aluno}</h2>
+    </main>
+        <div class="topo">
+            <button class="sair"><b>Sair</b></button>
+        </div>
+    </div>
+
+    <script>
+        const tipoUsuario = document.getElementById("tipo_usuario");
+        const campoProfessor = document.getElementById("campo_professor");
+        const campoAluno = document.getElementById("campo_aluno");
+
+        tipoUsuario.addEventListener("change", function () {
+            campoProfessor.style.display = this.value === "professor" ? "block" : "none";
+            campoAluno.style.display = this.value === "aluno" ? "block" : "none";
+        });
+    </script>   
+
+</body>
+</html>

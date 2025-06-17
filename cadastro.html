@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de usuário</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <div class="painel">
+        
+        <nav class="menu-lateral">
+            <button><b> Cadastrar Novos Cursos</b></button>
+            <button><b> Matricular Aluno</b></button>
+            <button> <b>Cadastrar Novas Turmas</b></button>
+            <button> <b>Cadastrar Novas Disciplinas</b></button>
+            <button> <b>Avisos Professores</b></button>
+            <button> <b> Avisos Alunos</b></button>
+            <button> <b> Enalamento de Aluno/Turmas</b></button>
+            <button> <b> Gestão de Professores</b></button>
+            <button> <b> Fechamento de Média</b></button>
+            <button> <b> Gerenciamento de Frequência</b></button>
+            <button> <b> PPC/Cursos</b></button>
+        </nav>
+        <img src="logo_sanquim.webp" alt="Logo Colégio" class="logo-inferior">
+    </div>
+
+    <div class="conteudo">
+        <div class="topo">
+            <button class="acao"><b>Alterar Senha Professores</b></button>
+            <button class="acao"><b>Alterar Senha Alunos</b></button>
+            <button class="acao"><b>Alterar Senha</b></button>
+            <button class="sair"><b>Sair</b></button>
+        </div>
+
+        <h2>CADASTRO DE USUÁRIO</h2>
+        <form action="#" method="POST" class="formulario">
+            <label for="tipo_usuario">Tipo de Usuário</label>
+            <select id="tipo_usuario" name="tipo_usuario" required>
+                <option value="">Selecione</option>
+                <option value="professor">Professor</option>
+                <option value="aluno">Aluno</option>
+            </select>
+
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" required placeholder="Digite o nome completo">
+
+            <label for="nome_social">Nome Social <small>(opcional)</small></label>
+            <input type="text" id="nome_social" name="nome_social" placeholder="Digite o nome social">
+
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" name="cpf" required pattern="\d{11}" placeholder="Digite o CPF (Apenas números)">
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="Digite o e-mail">
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" required placeholder="Digite a senha">
+
+            <div id="campo_professor" style="display:none;">
+                <label for="disciplina">Disciplina</label>
+                <input type="disciplina" id="disciplina" name="disciplina" placeholder="Digite a disciplina">
+            </div>
+
+            <div id="campo_aluno" style="display:none;">
+                <label for="curso">Curso</label>
+                <input type="text" id="curso" name="curso" placeholder="Digite o curso">
+
+                <label for="turma">Turma</label>
+                <input type="text" id="turma" name="turma" placeholder="Digite a Turma">
+            </div>
+
+            <button type="submit" class="botao"> Cadastrar usuário</button>
+
+        </form>
+        <div class="acoes-inferiores">
+            <button class="acao"><b>Alterar Usuários</b></button>
+            <button class="acao"><b>Inativar Usuários</b></button>
+            <button class="acao"><b>Consultar Professores</b></button>
+            <button class="acao"><b>Consultar Alunos</b></button>
+        </div>
+    </div>
+    <script>
+        const tipoUsuario = document.getElementById("tipo_usuario");
+        const campoProfessor = document.getElementById("campo_professor");
+        const campoAluno = document.getElementById("campo_aluno");
+
+        tipoUsuario.addEventListener("change", function () {
+            campoProfessor.style.display = this.value === "professor" ? "block" : "none";
+            campoAluno.style.display = this.value === "aluno" ? "block" : "none";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    display: flex;
+    background-color: #f5d363
+}
+
+.painel {
+    width: 250px;
+    background-color: #ffc31d;
+    padding: 20px;
+    height: 96vh;
+    position: relative;
+    overflow-y: auto;
+}
+
+.logo-inferior {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 230px;
+    height: auto;
+    opacity: 0.9;
+    z-index: 10;
+}
+
+.menu-lateral button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #1c8c94;
+    color: white;
+    padding: 10px;
+    border: 2px solid #136d72;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.menu-lateral button:hover {
+    background-color: #157d86;
+}
+
+.conteudo {
+    flex: 1;
+    padding: 40px;
+    background-color: #f7d764;
+    position: relative;
+}
+
+.acoes-inferiores {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-content: center;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.acoes-inferiores .acao:hover {
+    background-color:#157d86;
+}
+
+.topo {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.acao {
+    background-color: #1c8c94;
+    color: white;
+    border: 2px solid #136d72;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.acao:hover {
+    background-color: #157d86;
+}
+
+.sair {
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.sair:hover {
+    background-color: rgb(196, 3, 3);
+}
+
+
+h2 {
+    text-align: center;
+    color:#333;
+}
+
+.formulario {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.botao {
+    background-color: #1c8c94;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #157d86;
+}

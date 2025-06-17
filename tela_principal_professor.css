@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    display: flex;
+    background-color: #f5d363;
+    min-height: 100vh;
+}
+
+.painel {
+    width: 250px;
+    background-color: #ffc31d;
+    padding: 20px;
+    height: 96vh;
+    position: relative;
+    overflow-y: auto;
+}
+
+.logo-inferior {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 230px;
+    height: auto;
+    opacity: 0.9;
+    z-index: 10;
+}
+
+.menu-lateral button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #1c8c94;
+    color: white;
+    padding: 10px;
+    border: 2px solid #136d72;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family:'Lucida Sans';
+}
+
+.menu-lateral button:hover {
+    background-color: #157d86;
+}
+
+.conteudo {
+    flex: 1;
+    padding: 40px;
+    background-color: #f7d764;
+    position: relative;
+}
+
+.sair {
+
+    top: 20px;
+    right: 20px;
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.sair:hover {
+    background-color: rgb(196, 3, 3);
+}
+
+.topo {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.acao {
+    background-color: #1c8c94;
+    top: 20px;
+    right: 20px;
+    color: white;
+    border: 2px solid #136d72;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.acao:hover {
+    background-color: #157d86;
+}
+
+h2 {
+    color:#333;
+    margin-bottom: 20px;
+      position: absolute;
+    left: 37%;
+    top:60%;
+    
+}
+
+.conteudo_principal {
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.conteudo_principal img {
+    display: block;
+    margin: 0 auto 20px;
+    position: absolute;
+    left: 40%;
+    top:30%;
+}
+
+.conteudo_principal .foto {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background: #379090;
+    color: azure;
+    cursor: pointer;
+    font-size: large;
+    border-radius: 8px;
+    align-self: center;
+    border: 2px solid #2c7373;
+    transition: background-color 0.3s, border-color 0.3s;
+     position: absolute;
+    left: 46.5%;
+    top:54%;
+}
+
+.conteudo_principal .foto:hover {
+    background-color: #2c7373;
+    border-color: #1f4f4f;
+}
+
